@@ -10,7 +10,7 @@ const Header = () => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
-        <Image src={assets.profile_new} className="rounded-full w-32" />
+        <Image src={assets.profile_new} className="rounded-full w-32" alt="" />
       </motion.div>
       <motion.h3
         initial={{ y: -20, opacity: 0 }}
@@ -18,7 +18,8 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo"
       >
-        Hi! I'm Huynh Bao Minh <Image src={assets.hand_icon} className="w-6" />
+        Hi! I'm Huynh Bao Minh{" "}
+        <Image src={assets.hand_icon} className="w-6" alt="" />
       </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
@@ -46,7 +47,7 @@ const Header = () => {
           className="px-10 py-3 border-white rounded-full bg-black text-white flex items-center gap-2"
         >
           contact me
-          <Image src={assets.right_arrow_white} className="w-4" />
+          <Image src={assets.right_arrow_white} className="w-4" alt="" />
         </motion.a>
         <motion.a
           initial={{ y: 30, opacity: 0 }}
@@ -57,7 +58,7 @@ const Header = () => {
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >
           my resume
-          <Image src={assets.download_icon} className="w-4" />
+          <Image src={assets.download_icon} className="w-4" alt="" />
         </motion.a>
       </div>
     </div>

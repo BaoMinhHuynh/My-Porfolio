@@ -30,7 +30,7 @@ const ProjectCard = ({ project, index, targetScale, progress }) => {
                 width={1020}
                 height={770}
                 className="h-full w-full object-cover"
-                quality={100}
+                quality={75}
               />
             </motion.div>
           </div>
@@ -56,7 +56,8 @@ const ProjectCard = ({ project, index, targetScale, progress }) => {
                 href={`${project.slug}`}
                 className="flex items-center gap-2 hover:underline"
               >
-                Learn more <Image src={assets.right_arrow} className="w-3.5" />
+                Learn more{" "}
+                <Image src={assets.right_arrow} className="w-3.5" alt="" />
               </a>
             </div>
           </div>
